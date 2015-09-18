@@ -1,0 +1,16 @@
+ 
+sudo apt-get install python-virtualenv		: install my env 
+virtualenv -p /usr/bin/python3 myenv        : create myenv bubble in python 3 directory
+
+source myvenv/bin/activate
+
+ sudo chmod o+w /usr/share/applications/UoBVPN.desktop   : changes permissions to allow write +w
+ sudo chmod +x Desktop/UoBVPN.desktop     					: change permissions to allow execution +x
+
+
+ cp /usr/share/applications/UoBVPN.desktop Desktop/  : move the application to the desktop - FIND OUT HOW TO MAKE IT LAUNCH IT
+
+  ~/myvenv/bin/activate : ~ goes back to home e.g. cd ~ takes you top of path
+
+
+
