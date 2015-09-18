@@ -5,21 +5,30 @@
     <body>
 
 	    <div>
-	        <p>Hi there!</p>
+	    	<h1><a href="/">Django Girls Blog</a></h1>
+	    	<!-- {{ posts }} -->
+	        <!-- <p>Hi there!</p>
 	        <p>It works!</p>
 	        <h1>Blog:Part One</h1>
 	        <strong>This is a blog about:</strong>
-	        <ul><li>python</li><li>hemma</li><li>django</li></ul>
+	        <ul><li>python</li><li>hemma</li><li>django</li></ul -->>
 	    </div>    
 
 	    <div>
-	        <p>Hi there!</p>
-	        <p>It works!</p>
-	        <h1>Blog:Part One</h1>
-	        <strong>This is a blog about:</strong>
-	        <ul><li>python</li><li>hemma</li><li>django</li></ul>
+	        {% for post in posts %}
+    			<!-- {{ post }} -->
+    			<div>
+			        <p>published: {{ post.published_date }}</p>
+			        <h1><a href="">{{ post.title }}</a></h1>
+			        <p>{{ post.text|linebreaks }}</p>
+    			</div>
+			{% endfor %}
 	    </div>    
-    
+
+		<div>
+	        {{ posts }}
+	    </div>  
+
 
     </body>
 </html>

@@ -14,5 +14,9 @@ source myvenv/bin/activate
 
 python manage.py runserver
 
+touch post_list.html : creates new file called post_list.html
+
+https://www.heroku.com/
+
 
 
